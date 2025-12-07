@@ -1,0 +1,109 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+}
+
+.signin-card {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  width: 420px;
+  max-width: 90%;
+  padding: 50px 35px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signin-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+.signin-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form input[type="email"],
+.signin-form input[type="password"] {
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.signin-form input[type="email"]:focus,
+.signin-form input[type="password"]:focus {
+  border-color: #66a6ff;
+  box-shadow: 0 0 10px rgba(102, 166, 255, 0.5);
+  outline: none;
+}
+
+.signin-form input[type="submit"] {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(120deg, #43cea2, #185a9d);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signin-form input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(24,90,157,0.5);
+}
+
+.signin-footer {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+.signin-footer span {
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.forgot-btn {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(120deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forgot-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,75,43,0.5);
+}
+
+@media (max-width: 500px) {
+  .signin-card {
+    padding: 35px 20px;
+  }
+}
