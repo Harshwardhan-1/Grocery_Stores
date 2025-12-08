@@ -7,7 +7,7 @@ export default function ProductPage(){
     useEffect(()=>{
         const fetch=async()=>{
             try{
-            const response=await axios.get("http://localhost:3000/api/all/authCheck",{withCredentials:true});
+            const response=await axios.get("http://localhost:5000/api/all/authCheck",{withCredentials:true});
             if(response.data?.user){
                 setData(response.data.user)
             }else{
@@ -22,7 +22,7 @@ export default function ProductPage(){
     },[navigate]);
     return(
         <>
-        
+       <h1>harsh</h1>
        {
         data && (
             <div>

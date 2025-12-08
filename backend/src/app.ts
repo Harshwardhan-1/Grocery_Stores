@@ -21,7 +21,7 @@ app.get("/api/all/authCheck",verifyToken,(req:Request,res:Response)=>{
     user:(req as any).user
   })
 })
-const PORT=3000;
+const PORT=5000;
 app.listen(PORT,()=>{
   console.log(`Server is listening to http://localhost:${PORT}`);
 })

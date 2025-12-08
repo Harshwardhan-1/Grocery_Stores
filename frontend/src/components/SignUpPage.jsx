@@ -13,7 +13,7 @@ export default function SignUpPage(){
         e.preventDefault();
         const send={name,email,password};
         try{
-        const response=await axios.post("http://localhost:3000/api/all/signup",send,{withCredentials:true});
+        const response=await axios.post("http://localhost:5000/api/all/signup",send,{withCredentials:true});
         if(response.data.message==="User logged in Successfully"){
             navigate("/SignInPage",{state:{harsh:response.data.data}});
         }

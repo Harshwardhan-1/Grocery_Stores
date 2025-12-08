@@ -13,7 +13,7 @@ function App() {
   useEffect(()=>{
     const fetch=async()=>{
       try{
-        const response=await axios.get("http://localhost:3000/api/all/authCheck",{withCredentials:true});
+        const response=await axios.get("http://localhost:5000/api/all/authCheck",{withCredentials:true});
         if(response.status==200){
           navigate("/ProductPage");
         }

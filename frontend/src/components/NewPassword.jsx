@@ -17,7 +17,7 @@ export default function NewPassword(){
         }
         const send={password,confirm,email:harsh.email};
         try{
-        const response=await axios.post("http://localhost:3000/api/all/changePassword",send,{withCredentials:true});
+        const response=await axios.post("http://localhost:5000/api/all/changePassword",send,{withCredentials:true});
         if(response.data.message==="Password Change Successfully"){
             navigate("/SignInPage");
         }
